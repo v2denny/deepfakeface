@@ -4,7 +4,7 @@ Deep learning discriminative and generative models, applied to the  context of â
 
 
 # Classifier
-1. Transformer
+1. Transformer ViT (done. TODO: train 50 epochs)
 2. NN
 3. YOLO (done)
 4. multilayer perceptrons
