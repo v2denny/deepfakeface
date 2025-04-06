@@ -8,10 +8,8 @@ This directory contains scripts designed to preprocess images for training a dee
 |----------------|----------------|--------------------|------------------|
 | OpenCV (cv2)   | 82.0%          | 18.0%              | multi            |
 | MediaPipe      | 74.0%          | 26.0%              | static           |
-| Dlib           | -              | -                  | - (not used)     |
+| Dlib           | 89.0%          | 11.0%              | -                |
 | Central Crop   | 0.0%           | 100.0%             | -                |
-
-*Note: Dlib was not used in our final pipeline due to its longer processing time and complexity, which was unnecessary for our dataset requirements. We ultimately adopted OpenCV (cv2) for its efficiency and adequate accuracy.*
 
 ## Scripts Overview
 
@@ -24,8 +22,8 @@ This script performs central cropping on images to create a dataset of 30,000 im
 ### `create_30k_real_face_crop_cv2.py`
 Utilizes OpenCV (`cv2`) for face detection and cropping to generate a dataset of 30,000 images. OpenCV's face detection is generally fast but may not be as accurate as other methods, leading to a certain percentage of unsuccessful crops.
 
-### `create_30k_real_face_crop_dlib.py`
-Employs `dlib` for face detection and cropping to create a dataset of 30,000 images. While `dlib` offers accurate face detection, it was not used in our final approach due to its longer processing time and the fact that other methods sufficed for our needs.
+### `create_30k_real_face_crop_dlib.py` (chosen method)
+Employs `dlib` for face detection and cropping to create a dataset of 30,000 images. While `dlib` offers accurate face detection, its approach takes longer processing time.
 
 ### `create_30k_real_face_crop_mediapipe.py`
 Leverages Google's MediaPipe for face detection and cropping to assemble a dataset of 30,000 images. MediaPipe provides a balance between speed and accuracy, normally resulting in a higher percentage of successfully cropped images compared to some other methods.
