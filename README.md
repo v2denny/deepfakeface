@@ -18,7 +18,7 @@ The models are trained and evaluated on the **DeepFakeFace (DFF)** dataset, whic
 
 ## Approach
 
-- **Data Preprocessing**: For the classification task, no major preprocessing was done, the images were just resized accordingly to the model used. For the generation task, images were preprocessed using different cropping strategies to reduce background noise and focus on faces. Central cropping alone was insufficient, so we used face detection with OpenCV and MediaPipe to get better training inputs. Dlib was tested but discarded due to slow performance.
+- **Data Preprocessing**: For the classification task, no major preprocessing was done, the images were just resized accordingly to the model used. For the generation task, images were preprocessed using different cropping strategies to reduce background noise and focus on faces. Central cropping alone was insufficient, so we used face detection with OpenCV and MediaPipe to get better training inputs. Dlib was also tested and ended up being the method used even though its slow iteration.
 
 - **Data Distribution**: For classification: 30k real images and 30k fake images (10k from each dataset).
 For generation: all the 30k real images.
