@@ -51,7 +51,9 @@ For generation: all the 30k real images.
 ├── classifier_benchmarking.ipynb   # Comparing classifier performances
 ├── generator_dcGAN.ipynb           # GAN training (dcGAN)
 ├── generator_styleGAN.ipynb        # GAN training (StyleGAN)
-├── eda.ipynb                        # Exploratory Data Analysis
+├── generator_features.ipynb        # Generated images features vr real features
+├── generator_evaluation.ipynb      # Fooling rate and FID
+├── eda.ipynb                       # Exploratory Data Analysis
 ├── README.md
 └── requirements.txt                # Environment dependencies
 ```
