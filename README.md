@@ -29,7 +29,7 @@ For generation: all the 30k real images.
 
 - **Generation**:
   - Models: dcGAN, StyleGAN.
-  - Evaluation: Visual quality, FID, LPIPS.
+  - Evaluation: Visual quality, FID, Fool Rate.
 
 
 ## Project Structure
